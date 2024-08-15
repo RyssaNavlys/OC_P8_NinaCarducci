@@ -33,7 +33,99 @@
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="./assets/maugallery.min.js" defer></script>
 	<script src="./assets/scripts.min.js" defer></script>
-
+	<!-- microdata with schema.org labels -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": "Nina Carducci - portfolio de photographe",
+			"url": "https://ryssanavlys.github.io/OC_P8_NinaCarducci/",
+			"description": "Nina Carducci est photographe et offre ses services de shooting, de retouches de photographies et de création d’albums. Figer des instants de bonheur à travers la photographie permet de les partager à ses proches et de rendre ces moments immortels.",
+			"creator":
+				{
+				"@type": "Person",
+				"name": "Nina Carducci",
+				"gender": "Female",
+				"description": "Nina Carducci est une photographe professionnelle passionnée par l'art de capturer des moments authentiques et des émotions à travers son objectif, afin de les rendre immortels."
+				},
+			"mainEntity":
+				{
+					"@type": "ItemList",
+					"itemListElement":
+						[
+							{
+								"@type": "Person",
+								"name": "Nina Carducci",
+								"gender": "Female",
+								"description": "Nina Carducci est une photographe professionnelle passionnée par l'art de capturer des moments authentiques et des émotions à travers son objectif, afin de les rendre immortels.",
+								"url": "https://ryssanavlys.github.io/OC_P8_NinaCarducci/#about"
+							},
+							{
+								"@type": "CreativeWork",
+								"name": "Portfolio : des exemples de mon travail",
+								"url": "https://ryssanavlys.github.io/OC_P8_NinaCarducci/#gallery",
+								"description": "Galerie de quelques photos prises par Nina Carducci."
+							},
+							{
+								"@type": "ItemList",
+								"name": "Services proposées",
+								"url": "https://ryssanavlys.github.io/OC_P8_NinaCarducci/#services",
+								"itemListElement":
+									[
+										{
+											"@type": "Service",
+											"name": "Shooting photo",
+											"provider":
+												{
+													"@type": "Person",
+													"name": "Nina Carducci",
+													"gender": "Female",
+													"description": "Nina Carducci est une photographe professionnelle passionnée par l'art de capturer des moments authentiques et des émotions à travers son objectif, afin de les rendre immortels.",
+													"url": "https://ryssanavlys.github.io/OC_P8_NinaCarducci/#about"
+												},
+											"description": "Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos.",
+											"offers":
+												{
+													"@type": "Offer",
+													"priceCurrency": "EUR",
+													"price": "350",
+													"eligibleQuantity": {
+														"@type": "QuantitativeValue",
+														"unitCode": "DAY",
+														"value": 0.5
+													},
+													"availableAtOrFrom":
+														{
+															"@type": "Place",
+															"name": "Studio de Nina Carducci",
+															"address":
+																{
+																	"@type": "PostalAddress",
+																	"streetAddress": "68 avenue Alsace-Lorraine",
+																	"addressLocality": "Bordeaux",
+																	"postalCode": "33200",
+																	"addressCountry": "FR"
+																}
+														},
+													"areaServed":
+													[
+														{
+															"@type": "Place",
+															"name": "Bordeaux"
+														},
+														{
+															"@type": "Place",
+															"name": "Île-de-France"
+														}
+													]
+												}
+										}
+									]
+							}
+						]
+				}
+		}
+	</script>
 </head>
 <body>
 <header class="top-header">
