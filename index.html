@@ -207,49 +207,48 @@
 </header>
 <main>
 	<section id="header">
-
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" role="region" aria-label="image carousel">
+			<div class="carousel-indicators" role="tablist">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" role="tab" aria-label="go to slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" role="tab" aria-label="go to slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" role="tab" aria-label="go to slide 3"></button>
 			</div>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
+			<div class="carousel-inner" role="list">
+				<div class="carousel-item active" role="listitem">
 					<img src="./assets/images/slider/ryoji-iwata-marchant-sur-un-passage-pieton.webp" class="d-block w-100" alt="Un homme en costume marche sur un passage pour piétons">
 				</div>
-				<div class="carousel-item">
+				<div class="carousel-item" role="listitem">
 					<img src="./assets/images/slider/nicholas-green-foule-en-manifestation.webp" class="d-block w-100" alt="Des personnes manifestent joyeusement">
 				</div>
-				<div class="carousel-item">
+				<div class="carousel-item" role="listitem">
 					<img src="./assets/images/slider/edward-cisneros-danse-de-mariage.webp" class="d-block w-100" alt="Un couple s'embrasse lors d'une danse de mariage">
 				</div>
 			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-controls="carousel" aria-label="go to previous slide">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Previous</span>
 			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" aria-controls="carousel" aria-label="go to next slide">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
 	</section>
-	<section id="about">
+	<section id="about" aria-labelledby="about-me-title">
 		<div class="picture left">
 			<img src="./assets/images/nina-carducci.webp" alt="Nina Carducci de face">
 		</div>
 		<div id="about-me">
-			<h2 class="about-me__title">À propos de moi&nbsp;: qui suis-je ?</h2>
+			<h2 class="about-me__title" id="about-me-title">À propos de moi&nbsp;: qui suis-je ?</h2>
 			<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 		</div>
 	</section>
-	<section id="gallery">
-		<h2 class="title">Mon portfolio&nbsp;: des exemples de mon travail</h2>
+	<section id="gallery" aria-labelledby="gallery-title">
+		<h2 class="title" id="gallery-title">Mon portfolio&nbsp;: des exemples de mon travail</h2>
 		<div class="container py-3">
-			<div class="gallery" style="display: none">
+			<div class="gallery" style="display: none" role="region" aria-label="images-gallery">
 				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-concert.jpg" alt="photographie d'une scène de concert en arrière plan sur laquelle un groupe se produit">
 				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-debout-bras-croises.jpg" alt="photographie d'un homme en costume chic, les bras croisés et regardant l'objectif">
 				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-souriante.jpg" alt="photographie d'une femme assise souriante">
@@ -270,10 +269,10 @@
 			</figure>
 		</div>
 	</section>
-	<section id="services">
-		<h2 class="title">Mes services de photographie</h2>
-		<div class="container">
-			<article class="service">
+	<section id="services" aria-labelledby="services-title">
+		<h2 class="title" id="services-title">Mes services de photographie</h2>
+		<div class="container" role="list">
+			<article class="service" role="listitem">
 				<div class="service__description">
 					<h3>Shooting photo</h3>
 					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
@@ -282,9 +281,8 @@
 					<h4>350€/demi journée</h4>
 					<span>Matériel, déplacement inclus</span>
 				</div>
-
 			</article>
-			<article class="service">
+			<article class="service" role="listitem">
 				<div class="service__description">
 					<h3>Retouches</h3>
 					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
@@ -294,7 +292,7 @@
 					<span>2 AR par photo</span>
 				</div>
 			</article>
-			<article class="service">
+			<article class="service" role="listitem">
 				<div class="service__description">
 					<h3>Album photos</h3>
 					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
@@ -314,10 +312,10 @@
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</section>
-	<section id="contact">
+	<section id="contact" aria-labelledby="contact-title">
 		<div class="container">
 			<div class="form-container">
-				<h2 class="title contact__title">Me contacter&nbsp;: une question ? Une demande de devis ?</h2>
+				<h2 class="title contact__title" id="contact-title">Me contacter&nbsp;: une question ? Une demande de devis ?</h2>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 				<form action="" method="post">
 					<label for="nom">Nom</label>
